@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--버전 정보, 유니코드:모든 XML 코드에 기본으로 작성되어 있음-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="8Eight8"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+    <!--뷰크기,글씨,글씨크기,스타일,색,배경지정-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I can do this all day."
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
+        android:background="#BD0004"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+    <!--gravity : View 안 content(내용물) 의 위치 정렬-->
+    <!--layout_gravity-->
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avengers Assemble!"
+        android:typeface="serif"
+        android:padding="4dp"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:background="#FFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/captin"/>
+    <!--긴글 출력 및 라인 수 제한    -->
+    <!--visibility :뷰 명시 설정[visible, invisible, gone]-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/brainwashing"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:visibility="visible" />
+<!--    autoLink 속성-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://www.naver.com"
+        android:autoLink="web"/>
+<!--    XML 리소스(res-values-strings.xml)로 텍스트(문자열 데이터) 설정 -->
+</LinearLayout>
+
